@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="species">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Species-Clone</title>
+    <link rel="stylesheet" href="/dist/styles.css">
+  </head>
+  <body ng-controller="homeCtrl">
+
+    <div class="mainContainer">
+    <div class="left-section">
+      <div class="left-section-circle-container">
+        <button class="home-small-button" type="button" name="button"></button>
+        <button class="home-small-button" type="button" name="button"></button>
+        <button class="home-small-button" type="button" name="button"></button>
+      </div>
+    </div>
+
+    <ui-view></ui-view>
+
+    <div class="right-section">
+      <div class="right-section-circle-container">
+        <button class="home-small-button" type="button" name="button"></button>
+        <button class="home-big-button" type="button" name="button">What's the Threat!</button>
+        <button class="home-small-button" type="button" name="button"></button>
+      </div>
+    </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="/dist/js/bundle.js" charset="utf-8"></script>
+  </body>
+</html>
