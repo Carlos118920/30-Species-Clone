@@ -55,7 +55,10 @@ body {
   width: 100%; }
 
 button {
-  outline: none; }
+  outline: none;
+  background: black;
+  color: white;
+  cursor: pointer; }
 
 .mainContainer {
   display: flex;
@@ -65,6 +68,13 @@ button {
   border-radius: 0.5em;
   overflow: hidden;
   background: red; }
+
+.mainContainer::before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  background: url("http://freedesignfile.com/upload/2015/10/Grunge-textures-vintage-background-vectors-01.png"); }
 
 .left-section {
   width: 20%;
@@ -83,21 +93,22 @@ button {
   margin-left: 15px; }
 
 .home-small-button {
-  border: 5px solid black;
+  border: 5px solid white;
   border-radius: 50%;
   height: 55px;
   width: 55px;
-  margin: 5px; }
+  margin: 5px;
+  z-index: 5; }
 
 .home-big-button {
   border-radius: 50%;
-  border: none;
+  border: 5px solid white;
   height: 100px;
   width: 100px;
-  margin: 5px; }
+  margin: 5px;
+  z-index: 5; }
 
 ui-view {
-  background: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,16 +118,80 @@ ui-view {
 
 .shapes-container {
   margin: auto;
-  width: 200px;
-  height: 200px; }
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  border: 1px solid black; }
 
-#s {
+.shape {
   height: 100%;
   width: 100%;
-  overflow: hidden;
-  background: red;
-  -webkit-clip-path: polygon(30% 0%, 0% 30%, 30% 30%);
-  clip-path: polygon(30% 0%, 0% 30%, 30% 30%); }
+  background: white;
+  position: absolute; }
+
+#s1 {
+  -webkit-clip-path: polygon(49% 5%, 50% 7%, 48% 6%);
+  clip-path: polygon(49% 5%, 50% 7%, 48% 6%); }
+
+#s2 {
+  -webkit-clip-path: polygon(85% 20%, 86% 25%, 89% 25%);
+  clip-path: polygon(85% 20%, 86% 25%, 89% 25%); }
+
+#s3 {
+  -webkit-clip-path: polygon(30% 0%, 35% 8%, 40% 35%);
+  clip-path: polygon(30% 0%, 35% 8%, 40% 35%); }
+
+#s4 {
+  -webkit-clip-path: polygon(99% 99%, 95% 95%, 94% 98%);
+  clip-path: polygon(99% 99%, 95% 95%, 94% 98%); }
+
+#s5 {
+  -webkit-clip-path: polygon(89% 12%, 78% 15%, 82% 20%);
+  clip-path: polygon(89% 12%, 78% 15%, 82% 20%); }
+
+#s5 {
+  -webkit-clip-path: polygon(25% 68%, 28% 69%, 26% 60%);
+  clip-path: polygon(5% 68%, 28% 69%, 26% 60%); }
+
+#s6 {
+  -webkit-clip-path: polygon(50% 51%, 49% 59%, 56% 60%);
+  clip-path: polygon(50% 51%, 49% 59%, 56% 60%); }
+
+#s7 {
+  -webkit-clip-path: polygon(50% 95%, 56% 89%, 60% 96%);
+  clip-path: polygon(50% 95%, 56% 89%, 60% 96%); }
+
+#s8 {
+  -webkit-clip-path: polygon(72% 94%, 61% 67%, 80% 83%);
+  clip-path: polygon(72% 94%, 61% 67%, 80% 83%); }
+
+#s9 {
+  -webkit-clip-path: polygon(73% 7%, 55% 18%, 72% 50%);
+  clip-path: polygon(73% 7%, 55% 18%, 72% 50%); }
+
+#s10 {
+  -webkit-clip-path: polygon(95% 46%, 91% 63%, 81% 50%);
+  clip-path: polygon(95% 46%, 91% 63%, 81% 50%); }
+
+#s11 {
+  -webkit-clip-path: polygon(21% 98%, 6% 98%, 48% 86%);
+  clip-path: polygon(21% 98%, 6% 98%, 48% 86%); }
+
+#s12 {
+  -webkit-clip-path: polygon(10% 3%, 2% 18%, 21% 50%);
+  clip-path: polygon(10% 3%, 2% 18%, 21% 50%); }
+
+#s13 {
+  -webkit-clip-path: polygon(46% 32%, 29% 30%, 50% 50%);
+  clip-path: polygon(46% 32%, 29% 30%, 50% 50%); }
+
+#s14 {
+  -webkit-clip-path: polygon(95% 1%, 74% 23%, 96% 11%);
+  clip-path: polygon(95% 1%, 74% 23%, 96% 11%); }
+
+#s15 {
+  -webkit-clip-path: polygon(86% 71%, 77% 71%, 64% 49%);
+  clip-path: polygon(86% 71%, 77% 71%, 64% 49%); }
 
 .right-section {
   background: tranparent;
